@@ -4,13 +4,30 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="style.css">
   <script defer src="main.js"></script>
   <title>Document</title>
 </head>
 <body>
   <header>
-    <h1>Lorem ipsum dolor amet.</h1>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h1 class="text-center">Mon appli méteo.</h1>
+        </div>
+      </div>
+    </div>
+    <form class="row g-3 py-3" id="formSubmit">
+      <div class="col-auto">
+        <input type="text" class="form-control" name="" id="valueInput">
+      </div>
+      <div class="col-auto">
+        <input type="submit" class="btn btn-primary" value="Envoyer">
+      </div>
+    </form>
+    <div id="result"></div>
   </header>
 </body>
 </html>
